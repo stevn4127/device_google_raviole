@@ -32,11 +32,11 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_whitefin_hwasan.mk \
     $(LOCAL_DIR)/aosp_whitefin_64.mk \
     $(LOCAL_DIR)/factory_whitefin.mk \
-    $(LOCAL_DIR)/bliss_oriole.mk \
-    $(LOCAL_DIR)/bliss_raven.mk
+    $(LOCAL_DIR)/custom_oriole.mk \
+    $(LOCAL_DIR)/custom_raven.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_slider-userdebug \
     aosp_whitefin-userdebug \
-    bliss_oriole-userdebug \
-    bliss_raven-userdebug
+    custom_oriole-userdebug \
+    custom_raven-userdebug
