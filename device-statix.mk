@@ -77,3 +77,10 @@ $(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
 
 # Properties
 TARGET_VENDOR_PROP := device/google/raviole/vendor.prop
+
+TARGET_BOOT_ANIMATION_RES := 1440
+#TARGET_SUPPORTS_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_QUICK_TAP := true
