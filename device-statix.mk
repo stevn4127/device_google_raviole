@@ -55,8 +55,8 @@ PRODUCT_PACKAGES += \
     nos_app_keymaster:64 \
     nos_app_weaver:64 \
     sensors.dynamic_sensor_hal \
-    vendor.google.google_battery@1.1.vendor:64 \
-    vendor.google.wireless_charger@1.3.vendor:64
+    vendor.google.google_battery@1.1.vendor \
+    vendor.google.wireless_charger@1.3.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
@@ -77,3 +77,16 @@ $(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
 
 # Properties
 TARGET_VENDOR_PROP := device/google/raviole/vendor.prop
+
+# Gapps
+WITH_GAPPS := true
+$(call inherit-product, vendor/google/common/common-vendor.mk)
+
+# Pixel Offline charging animation
+TARGET_INCLUDE_PIXEL_CHARGER := true    
+
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# FOD animations
+EXTRA_FOD_ANIMATIONS := true
