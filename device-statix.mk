@@ -80,3 +80,10 @@ $(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
 
 # Properties
 TARGET_VENDOR_PROP := device/google/raviole/vendor.prop
+
+# EUICC
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
