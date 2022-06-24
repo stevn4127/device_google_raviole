@@ -80,3 +80,13 @@ TARGET_VENDOR_PROP := device/google/raviole/vendor.prop
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+
+# Bliss
+TARGET_SUPPORTS_QUICK_TAP := true
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.disable_rescue=true
+
