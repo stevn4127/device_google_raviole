@@ -1,0 +1,32 @@
+[
+  {
+    "remote": "github",
+    "repository": "stevn4127/android_device_google_gs101",
+    "target_path": "device/google/gs101",
+    "revision": "typhoon"
+  },
+  {
+    "remote": "gitlab",
+    "repository": "stebomurkn420/vendor_google_raven",
+    "target_path": "vendor/google_devices/raven",
+    "revision": "typhoon"
+  },
+  {
+    "remote": "gitlab",
+    "repository": "stebomurkn420/vendor_google_pixelparts",
+    "target_path": "vendor/google/pixelparts",
+    "revision": "typhoon"
+  },
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_kernel_google_gs101",
+    "target_path": "kernel/google/raviole/raven",
+    "revision": "lineage-20"
+  },
+  {
+   "remote": "github",
+   "repository"  : "stevn4127/device_google_gs101-sepolicy",
+   "target_path" : "device/google/gs101-sepolicy",
+   "revision"      : "typhoon"
+  }
+]
