@@ -12,7 +12,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
 # PowerShare
-include hardware/google/pixel/powershare/device.mk
+#include hardware/google/pixel/powershare/device.mk
 
 # Build necessary packages for vendor
 
@@ -40,8 +40,13 @@ PRODUCT_PACKAGES += \
 # Codec2
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor \
+    android.hardware.media.c2@1.1.vendor:64 \
+    android.hardware.media.c2@1.2.vendor:64 \
     libavservices_minijail.vendor \
     libcodec2_hidl@1.0.vendor \
+    libcodec2_hidl@1.1.vendor:64 \
+    libcodec2_hidl@1.2.vendor:64 \
+    libcodec2_soft_common.vendor:64 \
     libcodec2_vndk.vendor \
     libexynosutils \
     libexynosv4l2 \
@@ -143,4 +148,5 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.4.vendor:64 \
     android.hardware.wifi@1.5.vendor:64 \
     android.hardware.wifi@1.6.vendor:64 \
-    com.google.hardware.pixel.display-V4-ndk.vendor
+    com.google.hardware.pixel.display-V4-ndk.vendor \
+    com.google.hardware.pixel.display-V6-ndk.vendor

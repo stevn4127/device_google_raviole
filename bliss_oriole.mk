@@ -6,7 +6,7 @@
 
 # Inherit some common Lineage stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/raviole/aosp_oriole.mk)
@@ -17,7 +17,7 @@ include device/google/raviole/oriole/device-lineage.mk
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6
-PRODUCT_NAME := lineage_oriole
+PRODUCT_NAME := bliss_oriole
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
@@ -25,8 +25,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=oriole \
-    PRIVATE_BUILD_DESC="oriole-user 13 TP1A.220905.004 8927612 release-keys"
+    PRIVATE_BUILD_DESC="oriole-user 13 TQ3A.230705.001 10216780 release-keys"
 
-BUILD_FINGERPRINT := google/oriole/oriole:13/TP1A.220905.004/8927612:user/release-keys
+BUILD_FINGERPRINT := google/oriole/oriole:13/TQ3A.230705.001/10216780:user/release-keys
 
 $(call inherit-product, vendor/google/oriole/oriole-vendor.mk)
